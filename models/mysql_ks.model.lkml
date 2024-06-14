@@ -34,6 +34,8 @@ explore: orderdetails {}
 
 explore: orders {}
 
+explore: orders_sql {}
+
 explore: payments {}
 
 explore: productlines {}
@@ -47,4 +49,3 @@ explore: table_03 {}
 explore: table_04 {}
 
 explore: tutorials_tbl {}
-
