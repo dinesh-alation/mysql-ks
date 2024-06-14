@@ -1,6 +1,8 @@
 view: orders_sql {
   derived_table: {
 
+  # Using sql_trigger to define the persistence strategy
+    sql_trigger_value: SELECT MAX(updated_at) FROM orders ;;
   # Defining the derived table query
   sql: SELECT
         comments,
@@ -9,6 +11,9 @@ view: orders_sql {
       FROM orders
       GROUP BY comments, customer_number, customer_name
       ;;
+
+# Adding an index to the derived table
+    indexes: ["comments"]
   }
 
 #####  Basic Web Info  ########
