@@ -1,8 +1,7 @@
 view: orders_sql {
   derived_table: {
 
-  # Using sql_trigger to define the persistence strategy
-    sql_trigger_value: SELECT MAX(updated_at) FROM orders ;;
+  # Using sql_trigger to define the persistence
   # Defining the derived table query
   sql: SELECT
         comments,
