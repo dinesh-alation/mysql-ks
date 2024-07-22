@@ -8,7 +8,7 @@ view: orders_sql {
         customer_number AS customerNumber,
         customer_name
       FROM orders
-      -- Test Sandeep
+-- Test Sandeep
       GROUP BY comments, customer_number, customer_name
       ;;
 
